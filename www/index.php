@@ -4,7 +4,6 @@ require_once ('vendor/autoload.php');
 use \Statickidz\GoogleTranslate;
 
 // Allow requests from specific origins
-header('Access-Control-Allow-Origin: http://localhost:3000');
 header('Access-Control-Allow-Origin: https://next-words-form.vercel.app');
 
 // Allow specific HTTP methods
@@ -32,7 +31,7 @@ if (isset($_GET['word'])) {
     echo json_encode($response);
 } else {
     $response = array(
-        'error' => 'No se proporcionó la palabra en inglés'
+        'error' => 'No se proporcionó la palabra en inglés. Ej: http://localhost:81/?word=love'
     );
 
     header('Content-Type: application/json');
