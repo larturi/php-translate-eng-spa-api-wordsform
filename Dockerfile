@@ -1,7 +1,5 @@
-ARG php_version
+FROM php:7.4-apache
 
-FROM php:${php_version}
+COPY ./www /var/www/html
 
-RUN docker-php-ext-install apt install curl php-cli php-mbstring git unzip
-
-RUN a2enmod rewrite
+EXPOSE 80
