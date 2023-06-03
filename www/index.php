@@ -4,8 +4,8 @@ require_once ('vendor/autoload.php');
 use \Statickidz\GoogleTranslate;
 
 // Allow requests from specific origins
-// header('Access-Control-Allow-Origin: https://next-words-form.vercel.app');
-header('Access-Control-Allow-Origin: http://localhost:32000');
+header('Access-Control-Allow-Origin: https://next-words-form.vercel.app');
+// header('Access-Control-Allow-Origin: http://localhost:32000');
 
 // Allow specific HTTP methods
 header('Access-Control-Allow-Methods: GET');
